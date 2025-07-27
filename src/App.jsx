@@ -1,11 +1,11 @@
 import React, { useState, lazy, Suspense, memo, useCallback } from 'react'
 import './App.css'
 
-// Lazy load components that are below the fold
-const ServicesSection = lazy(() => import('./components/ServicesSection'))
-const ReviewsSection = lazy(() => import('./components/ReviewsSection'))
-const ContactSection = lazy(() => import('./components/ContactSection'))
-const AboutSection = lazy(() => import('./components/AboutSection'))
+// Lazy load components that are below the fold - Updated paths for /ui folder
+const ServicesSection = lazy(() => import('./components/ui/ServicesSection'))
+const ReviewsSection = lazy(() => import('./components/ui/ReviewsSection'))
+const ContactSection = lazy(() => import('./components/ui/ContactSection'))
+const AboutSection = lazy(() => import('./components/ui/AboutSection'))
 
 // Memoized components for better performance
 const Header = memo(({ onNavClick }) => (
